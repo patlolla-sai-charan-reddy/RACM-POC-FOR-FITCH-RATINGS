@@ -14,7 +14,6 @@ class App extends Component {
   componentDidMount() {
     makeCall("https://p7ojo.mocklab.io/racm")
       .then(result => {
-        console.log("res", result);
         this.setState({
           data: result[0].documentContent
         });
