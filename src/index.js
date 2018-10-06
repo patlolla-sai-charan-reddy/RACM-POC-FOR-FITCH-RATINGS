@@ -8,7 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      data: [],
+      error: false
     };
   }
   componentDidMount() {
@@ -22,6 +23,9 @@ class App extends Component {
       .catch(error => {
         console.log("error", error);
         console.log("API Expired");
+        this.setState({
+          error: true
+        });
       });
   }
   render() {
@@ -39,6 +43,7 @@ class App extends Component {
             );
           });
         })()}
+        {this.state.error ? <p>No Data</p> : ""}
       </div>
     );
   }
