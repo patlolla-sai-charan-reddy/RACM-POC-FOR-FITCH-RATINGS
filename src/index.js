@@ -43,7 +43,7 @@ class App extends Component {
             );
           });
         })()}
-        {this.state.error ? <p>No Data</p> : ""}
+        {this.state.error ? <p>The mock api is expired.</p> : ""}
       </div>
     );
   }
