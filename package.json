@@ -1,7 +1,7 @@
 {
   "name": "racm-poc",
   "version": "1.0.0",
-  "description": "RACM POC FOR FITCH RATINGS",
+  "description": "RACM POC FOR FITCH RATINGS - COMPLETED ON 10/16/2018",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
