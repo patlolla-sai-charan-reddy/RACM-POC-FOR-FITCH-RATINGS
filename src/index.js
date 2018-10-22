@@ -22,7 +22,6 @@ class App extends Component {
       })
       .catch(error => {
         console.log("error", error);
-        console.log("API Expired");
         this.setState({
           error: true
         });
